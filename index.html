@@ -1,69 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>A Noite da Invasão</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      padding: 20px;
-    }
-
-    #app {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    #scene-text {
-      font-size: 20px;
-      margin-bottom: 20px;
-      white-space: pre-line;
-    }
-
-    .option-btn {
-      display: block;
-      width: 100%;
-      margin: 8px 0;
-      padding: 10px;
-      background: #333;
-      color: white;
-      border: 1px solid #555;
-      font-size: 16px;
-      cursor: pointer;
-      text-align: left;
-      border-radius: 6px;
-    }
-
-    .option-btn:hover {
-      background: #444;
-    }
-
-    #restart-btn {
-      margin-top: 20px;
-      padding: 10px;
-      font-size: 18px;
-      width: 100%;
-      background: crimson;
-      border: none;
-      color: white;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Corrida Final</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div id="app">
-    <h1>A Noite da Invasão</h1>
-
-    <div id="scene-text">Carregando...</div>
-
-    <div id="options"></div>
-
-    <button id="restart-btn" style="display:none;">Recomeçar</button>
-  </div>
+    <div id="game-container">
+        <h1>A Corrida Final</h1>
+        <p id="story">Você está na última volta da corrida de Fórmula 1. Seu carro está em segundo lugar. O que você faz?</p>
+        <div id="choices">
+            <button onclick="chooseOption(1)">Tenta ultrapassar o líder na curva</button>
+            <button onclick="chooseOption(2)">Mantém a posição e espera a próxima reta</button>
+        </div>
+    </div>
 
 <script src="script.js"></script>
 </body>
